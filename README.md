@@ -1,10 +1,11 @@
-# Files
+# Python Unittest
 
-This is an example API tests using Python unittest test framework.
+This is an example API test using Python unittest test framework. We can use this to automate numerous test cases with simple execution.
 
 ## Prerequisites
 
-You'll need Python3 installed as well as module 'requests' installed.
+You'll need python3 installed, as well as the pip module 'requests' installed.
+
 To install requests module run: `pip install requests`
 
 ## How to Run
