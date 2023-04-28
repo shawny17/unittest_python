@@ -14,15 +14,15 @@ class APITests(unittest.TestCase):
         # Get response body as JSON
         cls.response = requests.get(url=url).json()
 
-    # TC-1: Verify that Name of response body is equal to 'Cardon credits'
+    # TC-1: Verify that Name of response body is equal to 'Carbon credits'
     def test_name_is_valid(self):
         self.assertEqual(self.response['Name'], 'Carbon credits',
                          "FAIL: Name element returns '{}'.".format(self.response['Name']))
 
     # TC-2: Verify that CanRelist of response body is true
     def test_can_relist_is_valid(self):
-        self.assertEqual(self.response['CanRelist'], True,
-                         "FAIL: CanRelist element returns '{}'.".format(self.response['CanRelist']))
+        self.assertTrue(self.response['CanRelist'], 
+                        "FAIL: CanRelist element returns '{}'.".format(self.response['CanRelist']))
 
     # TC-3: Verify that Promotions element with Name = "Gallery" has a Description that 
     # contains the text "Good position in category"
